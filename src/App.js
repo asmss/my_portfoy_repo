@@ -42,6 +42,11 @@ const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
       });
   };
 
+  const closeSidebarIfOpen = () => {
+  if (isSidebarOpen && window.innerWidth < 900) {
+    setIsSidebarOpen(false);
+  }
+};
   const filteredProjects = filter === 'all' 
     ? t.projects 
     : t.projects.filter(p => p.category === filter);
@@ -95,7 +100,7 @@ const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
         </div>
       </aside>
 
-      <main className="main-content">
+      <main className="main-content"onClick={closeSidebarIfOpen}>
         <section id="about" className="content-card">
           <h1>Asım Karabulut</h1>
           <p className="job-title" style={{color: 'var(--accent)', fontWeight: 'bold'}}>{t.role}</p>
