@@ -60,7 +60,7 @@ const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
       <aside className={`sidebar ${isSidebarOpen ? 'open' : 'closed'}`}>
         <div className="profile-section">
           <img src="/image/asım.jpeg" alt="Asım" className="profile-pic" />
-          <h2>Asim Karabulut</h2>
+          <h2>Asım Karabulut</h2>
           <p className="sidebar-role">{t.role}</p>
         </div>
 
@@ -97,7 +97,7 @@ const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
 
       <main className="main-content">
         <section id="about" className="content-card">
-          <h1>Asim Karabulut</h1>
+          <h1>Asım Karabulut</h1>
           <p className="job-title" style={{color: 'var(--accent)', fontWeight: 'bold'}}>{t.role}</p>
           <div className="divider"></div>
           <h3>{t.aboutTitle}</h3>
