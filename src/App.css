@@ -8,7 +8,7 @@
   --text-main: #f1f5f9;
   --text-dim: #94a3b8;
 
-  --accent: #38bdf8; 
+  --accent: #ffffff; 
   --accent-hover: #7dd3fc;
   --accent-soft: rgba(56, 189, 248, 0.1);
 
@@ -485,7 +485,7 @@ section[id] {
   color: var(--btn-text);
   z-index: 1200;
   cursor: pointer;
-  box-shadow: 0 4px 15px rgba(56, 189, 248, 0.4);
+  box-shadow: 0 4px 15px rgb(255, 255, 255);
   display: flex;
   align-items: center;
   justify-content: center;
