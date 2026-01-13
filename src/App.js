@@ -8,6 +8,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import emailjs from '@emailjs/browser'; 
+import { faCertificate } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
   const [lang, setLang] = useState('tr');
@@ -76,6 +77,9 @@ const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
           <a href="#skills" className="side-nav-link" onClick={handleNavLinkClick}>
             <FontAwesomeIcon icon={faTools} /> {t.skillsTitle}
           </a>
+          <a href="#certificates" className="side-nav-link" onClick={handleNavLinkClick}>
+          <FontAwesomeIcon icon={faCertificate} /> {t.certificatesTitle || "Sertifikalar"}
+          </a>            
           <a href="#projects" className="side-nav-link" onClick={handleNavLinkClick}>
             <FontAwesomeIcon icon={faBriefcase} /> {t.navProjects}
           </a>
@@ -134,6 +138,38 @@ const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
             </div>
           ))}
         </section>
+
+<section id="certificates" className="content-card">
+  <h3>{t.certificatesTitle}</h3>
+  <div className="divider"></div>
+  <div className="certificates-grid">
+    {t.certificates.map((cert, index) => (
+      <div key={index} className="cert-card">
+        <div className="cert-img-container">
+          <img src={cert.img || "/image/default-cert.png"} alt={cert.title} />
+        </div>
+
+        <div className="cert-content">
+          <div className="cert-info">
+            <h4>{cert.title}</h4>
+            <div className="cert-issuer">
+              <FontAwesomeIcon icon={faCertificate} className="cert-mini-icon" /> 
+              {cert.issuer}
+            </div>
+            <div className="cert-date">{cert.date}</div>
+          </div>
+          
+          {cert.link && (
+            <a href={cert.link} target="_blank" rel="noreferrer" className="cert-link">
+              {t.viewCertificate} <FontAwesomeIcon icon={faExternalLinkAlt} size="sm" />
+            </a>
+          )}
+        </div>
+      </div>
+    ))}
+  </div>
+</section>            
+            
 
         <section id="projects">
           <div className="section-header">
