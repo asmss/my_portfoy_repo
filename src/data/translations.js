@@ -177,7 +177,7 @@ export const translations = {
           "A small and practical mini survey application. I implemented session-based authentication and used Firebase Firestore as the database. The backend was developed with Node.js and Express.js, tested with Postman, and deployed using Render.",
         link: "https://www.kimhakli.site/",
         type: "Website",
-        img: "/image/default-project.png",
+        img: "/image/kimhakli.png",
         tags: ["Node.js", "Firebase", "Firestore", "Render", "HTML", "CSS", "JavaScript"]
       },
       {
