@@ -4,7 +4,7 @@ export const skillsData = {
   frontend: ["REACT", "HTML", "CSS", "EJS TEMPLATING"],
   backend: ["NODE.JS (Express.js)", "REST API"],
   database: ["MYSQL", "SQLite", "MongoDB", "FIREBASE (Firestore)"],
-  devops_tools: ["DOCKER", "POSTMAN", "FIREBASE (Auth)", "Device Manager"]
+  devops_tools: ["DOCKER", "POSTMAN", "FIREBASE (Auth)", "Git","Github","Supabase"]
 };
 
 export const translations = {
