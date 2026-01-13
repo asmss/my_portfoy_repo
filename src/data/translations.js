@@ -101,7 +101,7 @@ export const translations = {
         tags: ["Flutter", "Android Native", "Java", "MethodChannel","Riverpod"]
       }
     ],
-    certificatesTitle: "Sertifikalar ve Eğitimler",
+    certificatesTitle: "Sertifikalar & Eğitimler",
 viewCertificate: "Sertifikayı Görüntüle",
 certificates: [
   {
