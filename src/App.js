@@ -95,8 +95,8 @@ const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
 
         <div className="sidebar-social">
           <a href="https://github.com/asmss" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
-          <a href="https://linkedin.com/in/asimkarabulut" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a>
-          <a href="https://instagram.com/asm_karabult" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram} /></a>
+          <a href="http://linkedin.com/in/asım-karabulut-6a874b326" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a>
+          <a href="https://www.instagram.com/asm_karabulut?igsh=Z2ZiMWsybTlzdGJm&utm_source=qr" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram} /></a>
         </div>
       </aside>
 
