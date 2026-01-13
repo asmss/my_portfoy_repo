@@ -36,7 +36,7 @@ const Sidebar = ({ lang, setLang, theme, setTheme, t, isSidebarOpen, setIsSideba
           <a href="https://linkedin.com/in/asimkarabulut" target="_blank" rel="noreferrer" className="social-icon linkedin">
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
-          <a href="https://instagram.com/asm_karabulut" target="_blank" rel="noreferrer" className="social-icon instagram">
+          <a href="https://www.instagram.com/asm_karabulut?igsh=Z2ZiMWsybTlzdGJm&utm_source=qr" target="_blank" rel="noreferrer" className="social-icon instagram">
             <FontAwesomeIcon icon={faInstagram} />
           </a>
         </div>
