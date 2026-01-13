@@ -100,7 +100,40 @@ export const translations = {
         img: "/image/default-project.png",
         tags: ["Flutter", "Android Native", "Java", "MethodChannel","Riverpod"]
       }
-    ]
+    ],
+    certificatesTitle: "Certificates & Training",
+viewCertificate: "View Certificate",
+certificates: [
+  {
+    title: "Python For Everybody Specialization Program",
+    issuer: "University Of Michigan",
+    date: "2025",
+    img: "/image/michigan.jpeg",
+    link: "https://www.coursera.org/account/accomplishments/specialization/1TUPP0O68EF5"
+  },
+  {
+    title: "Using Python to Access Web Data",
+    issuer: "University Of Michigan",
+    date: "2025",
+    img: "/image/michigan.jpeg",
+    link: "https://www.coursera.org/account/accomplishments/verify/3OCQ5H8LHYBZ"
+  },
+    {
+    title: "Getting Started With Git and Github",
+    issuer: "IBM",
+    date: "2026",
+    img: "/image/ibm_logo.jpeg",
+    link: "https://www.coursera.org/account/accomplishments/verify/ATL4P1O3WQ08"
+  },
+      {
+    title: " Bilgisayar dosya güvenliği ve veri kurtarma",
+    issuer: "ODTÜ",
+    date: "2025",
+    img: "/image/orta_dogu_teknik_universitesi_logo.jpeg",
+    link: "https://www.linkedin.com/in/as%C4%B1m-karabulut-6a874b326/details/certifications/"
+  },
+],
+    
   },
  en: {
     role: "Computer Engineer",
@@ -210,6 +243,39 @@ export const translations = {
         img: "/image/default-project.png",
         tags: ["Flutter", "Android Native", "Java", "MethodChannel", "Riverpod"]
       }
-    ]
+    ],
+   certificatesTitle: "Certificates & Training",
+viewCertificate: "View Certificate",
+certificates: [
+  {
+    title: "Python For Everybody Specialization Program",
+    issuer: "University Of Michigan",
+    date: "2025",
+    img: "/image/michigan.jpeg",
+    link: "https://www.coursera.org/account/accomplishments/specialization/1TUPP0O68EF5"
+  },
+  {
+    title: "Using Python to Access Web Data",
+    issuer: "University Of Michigan",
+    date: "2025",
+    img: "/image/michigan.jpeg",
+    link: "https://www.coursera.org/account/accomplishments/verify/3OCQ5H8LHYBZ"
+  },
+    {
+    title: "Getting Started With Git and Github",
+    issuer: "IBM",
+    date: "2026",
+    img: "/image/ibm_logo.jpeg",
+    link: "https://www.coursera.org/account/accomplishments/verify/ATL4P1O3WQ08"
+  },
+      {
+    title: " Bilgisayar dosya güvenliği ve veri kurtarma",
+    issuer: "ODTÜ",
+    date: "2025",
+    img: "/image/orta_dogu_teknik_universitesi_logo.jpeg",
+    link: "https://www.linkedin.com/in/as%C4%B1m-karabulut-6a874b326/details/certifications/"
+  },
+],
+   
   }
 };
