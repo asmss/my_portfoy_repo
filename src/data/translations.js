@@ -101,8 +101,8 @@ export const translations = {
         tags: ["Flutter", "Android Native", "Java", "MethodChannel","Riverpod"]
       }
     ],
-    certificatesTitle: "Certificates & Training",
-viewCertificate: "View Certificate",
+    certificatesTitle: "Sertifikalar ve Eğitimler",
+viewCertificate: "Sertifikayı Görüntüle",
 certificates: [
   {
     title: "Python For Everybody Specialization Program",
@@ -269,7 +269,7 @@ certificates: [
     link: "https://www.coursera.org/account/accomplishments/verify/ATL4P1O3WQ08"
   },
       {
-    title: " Bilgisayar dosya güvenliği ve veri kurtarma",
+    title: " Computer file security and data recovery",
     issuer: "ODTÜ",
     date: "2025",
     img: "/image/orta_dogu_teknik_universitesi_logo.jpeg",
