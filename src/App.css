@@ -48,7 +48,6 @@ body {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   background: var(--bg-main);
   color: var(--text-main);
-  line-height: 1.6;
 }
 
 .certificates-grid {
