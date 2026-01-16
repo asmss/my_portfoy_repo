@@ -76,7 +76,7 @@ export const translations = {
       { 
         title: "Neobez", 
         category: "mobile",
-        desc: "Bu program sayesinde ;programın kendi içindeki real-time mesajlaşma sayfası sayesinde gerçek bir diyetisyenle konuşma fırsatı bulunuyor, hazır yapay zeka API sini entegre ettiğim bir sayfa sayesinde yapay zeka botuyla fikir alışverişi yapılabiliyor ,diyetisyenin kendilerine verebileceği görevleri yapıp ilerleme kontrolü yapılıyor ,yaklaşık 1500 tane yiyecek verisinin olduğu yiyeceklerin kalori,protein vb değerlerinin yazdığı bir sayfa sayesinde araştırma imkanı sunar. Program için flutter dilini ,veritabanı olarak Firebase'in noSQL yapılı Firestore database'ini,auth işlemleri içinde Firebase auth servisini kullandım.", 
+        desc: "Bu program sayesinde ;programın kendi içindeki real-time mesajlaşma sayfası sayesinde gerçek bir diyetisyenle konuşma fırsatı bulunuyor, hazır yapay zeka API sini entegre ettiğim bir sayfa sayesinde yapay zeka botuyla fikir alışverişi yapılabiliyor ,diyetisyenin kendilerine verebileceği görevleri yapıp ilerleme kontrolü yapılıyor ,yaklaşık 1500 tane yiyecek verisinin olduğu yiyeceklerin kalori,protein vb değerlerinin yazdığı bir sayfa sayesinde araştırma imkanı sunar. Program için flutter frameworkünü ,veritabanı olarak Firebase'in noSQL yapılı Firestore database'ini,auth işlemleri içinde Firebase auth servisini kullandım.", 
         link: "https://drive.google.com/file/d/1L54k6Qi4Ks2A1MEanOQPNhJWdQyowcQH/view?usp=drive_link", 
         type: "İndir", 
         img: "/image/app_png.png",
