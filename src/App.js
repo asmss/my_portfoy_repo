@@ -65,7 +65,7 @@ const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
 
       <aside className={`sidebar ${isSidebarOpen ? 'open' : 'closed'}`}>
         <div className="profile-section">
-          <img src="/image/asım.jpeg" alt="Asım" className="profile-pic" />
+          <img src="/image/asimssss.jpeg" alt="Asım" className="profile-pic" />
           <h2>Asım Karabulut</h2>
           <p className="sidebar-role">{t.role}</p>
         </div>
