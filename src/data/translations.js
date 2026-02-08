@@ -1,7 +1,7 @@
 export const skillsData = {
   languages: ["C", "JAVA", "PYTHON", "DART", "JAVASCRIPT"],
   mobile: ["FLUTTER", "REACT NATIVE", "Expo Go", "Expo Router", "Context API"],
-  frontend: ["REACT", "HTML", "CSS", "EJS TEMPLATING"],
+  frontend: ["REACT", "HTML5", "CSS3", "EJS TEMPLATING"],
   backend: ["NODE.JS (Express.js)", "REST API"],
   database: ["MYSQL", "SQLite", "MongoDB", "FIREBASE (Firestore)"],
   devops_tools: ["DOCKER", "POSTMAN", "FIREBASE (Auth)", "Git","Github","Supabase"]
@@ -11,7 +11,7 @@ export const translations = {
   tr: {
     role: "Bilgisayar Mühendisi",
     aboutTitle: "Hakkımda",
-    aboutText: "Ben Asım Karabulut, Konya Teknik Üniversitesi Bilgisayar Mühendisliği 4. sınıf öğrencisiyim. Mobil uygulama geliştirme, back-end programlama ve veri bilimi alanlarında aktif olarak kendimi geliştirmekteyim. Bunun yanı sıra yapay zeka alanına da büyük ilgi duyuyor, bu alandaki gelişmeleri yakından takip ediyorum. Yazılım dünyasında yetkin bir geliştirici olma hedefiyle, disiplinli ve kararlı bir şekilde ilerliyorum. Hem akademik hem de bireysel projelerle teknik becerilerimi pekiştirerek, yazılım sektöründe değer yaratan bir mühendis olmayı amaçlıyorum.",
+    aboutText: "Ben Asım Karabulut, Konya Teknik Üniversitesi Bilgisayar Mühendisliği 4. sınıf öğrencisiyim. Mobil uygulama geliştirme, full-stack web programlama ve veri bilimi alanlarında aktif olarak kendimi geliştirmekteyim. Bunun yanı sıra yapay zeka alanına da büyük ilgi duyuyor, bu alandaki gelişmeleri yakından takip ediyorum. Yazılım dünyasında yetkin bir geliştirici olma hedefiyle, disiplinli ve kararlı bir şekilde ilerliyorum. Hem akademik hem de bireysel projelerle teknik becerilerimi pekiştirerek, yazılım sektöründe değer yaratan bir mühendis olmayı amaçlıyorum.",
     skillsTitle: "Yetenekler",
     projectsTitle: "Projelerim",
     navAbout: "Hakkımda",
@@ -140,7 +140,7 @@ certificates: [
 
     aboutTitle: "About Me",
     aboutText:
-      "I am Asım Karabulut, a 4th-year Computer Engineering student at Konya Technical University. I am actively improving myself in mobile application development, back-end programming, and data science. In addition, I have a strong interest in artificial intelligence and closely follow developments in this field. With the goal of becoming a competent software developer, I move forward in a disciplined and determined manner. By strengthening my technical skills through both academic and personal projects, I aim to become an engineer who creates real value in the software industry.",
+      "I am Asım Karabulut, a 4th-year Computer Engineering student at Konya Technical University. I am actively improving myself in mobile application development, full-stack web programming, and data science. In addition, I have a strong interest in artificial intelligence and closely follow developments in this field. With the goal of becoming a competent software developer, I move forward in a disciplined and determined manner. By strengthening my technical skills through both academic and personal projects, I aim to become an engineer who creates real value in the software industry.",
 
     skillsTitle: "Skills",
     projectsTitle: "My Projects",
