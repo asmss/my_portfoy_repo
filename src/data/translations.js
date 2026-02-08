@@ -2,7 +2,7 @@ export const skillsData = {
   languages: ["C", "JAVA", "PYTHON", "DART", "JAVASCRIPT"],
   mobile: ["FLUTTER", "REACT NATIVE", "Expo Go", "Expo Router", "Context API"],
   frontend: ["REACT", "HTML5", "CSS3", "EJS TEMPLATING"],
-  backend: ["NODE.JS (Express.js)","Python(flask)" "REST API"],
+  backend: ["NODE.JS (Express.js)","Python(flask)" ,"REST API"],
   database: ["MYSQL", "SQLite", "MongoDB", "FIREBASE (Firestore)"],
   devops_tools: ["DOCKER", "POSTMAN", "FIREBASE (Auth)", "Git","Github","Supabase"]
 };
