@@ -51,7 +51,7 @@ export const translations = {
         category: "web",
         desc: "Bu projede React ve Node.js kullanarak YouTube videolarını yüksek kaliteli ses ve video formatında dosyalara dönüştüren bir platform geliştirdim. Arka planda dönüşüm süreçlerini yönetmek için BullMQ ve Redis tabanlı bir kuyruk sistemi kullandım. Dockerize edilmiş yapısıyla ölçeklenebilir bir mimariye sahiptir ve Socket.io ile kullanıcıya anlık işlem durumu bildirimi sağlar.",
         link: "https://github.com/asmss/videoConventer",
-        type: "İncele",
+        type: "Github",
         img: "/image/videoConventer.png",
         tags: ["React", "Node.js", "Redis", "BullMQ", "Docker", "Socket.io"]
       },
@@ -197,7 +197,7 @@ export const translations = {
         category: "web",
         desc: "Developed a robust platform using React and Node.js for converting YouTube videos into high-quality audio and video files format. The system features a background processing architecture powered by BullMQ and Redis for efficient task queuing. It is fully containerized using Docker and utilizes Socket.io to provide users with real-time conversion progress updates.",
         link: "https://github.com/asmss/videoConventer",
-        type: "View",
+        type: "Github",
         img: "/image/videoConventer.png",
         tags: ["React", "Node.js", "Redis", "BullMQ", "Docker", "Socket.io"]
       },
