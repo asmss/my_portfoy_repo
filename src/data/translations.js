@@ -2,9 +2,9 @@ export const skillsData = {
   languages: ["C", "JAVA", "PYTHON", "DART", "JAVASCRIPT"],
   mobile: ["FLUTTER", "REACT NATIVE", "Expo Go", "Expo Router", "Context API"],
   frontend: ["REACT", "HTML5", "CSS3", "EJS TEMPLATING"],
-  backend: ["NODE.JS (Express.js)","Python(flask)" ,"REST API"],
+  backend: ["NODE.JS (Express.js)", "Python(flask)", "REST API"],
   database: ["MYSQL", "SQLite", "MongoDB", "FIREBASE (Firestore)"],
-  devops_tools: ["DOCKER", "POSTMAN", "FIREBASE (Auth)", "Git","Github","Supabase"]
+  devops_tools: ["DOCKER", "POSTMAN", "FIREBASE (Auth)", "Git", "Github", "Supabase"]
 };
 
 export const translations = {
@@ -28,114 +28,123 @@ export const translations = {
     formMsg: "Mesajınız",
     formBtn: "Gönder",
     projects: [
-      { 
-        title: "Kişisel finans takip uygulaması", 
+      {
+        title: "CV Oluşturucu",
         category: "mobile",
-        desc: "Bu projemde flutter + firebase kullandım. Bu uygulamanın amacı başlıkta belirttiğim gibi insanların finansal manada yaptığı harcamalar, gelir-gider durumu takibi, canlı döviz verileriyle kendi gelir giderinin hesabı, hatırlatma ve planlama vb. gibi işlemlerin takibini yapmak.", 
-        link: "https://drive.google.com/file/d/10wudKLoNPqlIok_CjniL7hzennVgTqSI/view?usp=sharing", 
-        type: "İndir", 
+        desc: "Bu proje, React Native (Expo) ile geliştirilen mobil bir arayüz üzerinden alınan kullanıcı verilerini, Node.js & Express.js tabanlı bir backend ile işleyerek PDF CV çıktısı üreten bir sistemdir. Backend tamamen Docker ortamında çalışmakta ve Render üzerinde canlıya alınmıştır.",
+        link: "https://github.com/asmss/cv_olusturucu-0",
+        type: "Github",
+        img: "/image/cv_img.jpg",
+        tags: ["React Native", "Node.js", "Express.js", "Docker", "Expo", "Postman"]
+      },
+      {
+        title: "SnippetKRBLT",
+        category: "mobile",
+        desc: "Bu uygulamayı geliştirirken, kullanıcıya en iyi mobil deneyimi sunmak için Frontend katmanında React Native ve kolay dağıtım için Expo Go platformunu kullandım. Projenin Backend omurgasını ise yüksek performans ve ölçeklenebilirlik sağlamak amacıyla Node.js ve Express.js oluşturuyor. Tüm kod parçacıkları ve kullanıcı verileri ise güvenilir bir bulut tabanlı çözüm olan MongoDB Atlas üzerinde saklanmaktadır. Ayrıca, uygulamanın ana ayırt edici özelliği olarak, kod parçacıklarını analiz etmek ve yönetimi kolaylaştırmak için LLM (Llama 3) yapay zekasını projemize chatbot olacak şekilde entegre ettim.",
+        link: "https://github.com/asmss/SnippetKRBLT",
+        type: "Github",
+        img: "/image/code-icon-png-0.jpg",
+        tags: ["React Native", "Node.js", "Express.js", "MongoDB Atlas", "Llama 3", "Expo"]
+      },
+      {
+        title: "YouTube Video & Music Converter",
+        category: "web",
+        desc: "Bu projede React ve Node.js kullanarak YouTube videolarını yüksek kaliteli ses ve video formatında dosyalara dönüştüren bir platform geliştirdim. Arka planda dönüşüm süreçlerini yönetmek için BullMQ ve Redis tabanlı bir kuyruk sistemi kullandım. Dockerize edilmiş yapısıyla ölçeklenebilir bir mimariye sahiptir ve Socket.io ile kullanıcıya anlık işlem durumu bildirimi sağlar.",
+        link: "https://github.com/asmss/videoConventer",
+        type: "İncele",
+        img: "/image/videoConventer.png",
+        tags: ["React", "Node.js", "Redis", "BullMQ", "Docker", "Socket.io"]
+      },
+      {
+        title: "Kişisel finans takip uygulaması",
+        category: "mobile",
+        desc: "Bu projemde flutter + firebase kullandım. Bu uygulamanın amacı başlıkta belirttiğim gibi insanların finansal manada yaptığı harcamalar, gelir-gider durumu takibi, canlı döviz verileriyle kendi gelir giderinin hesabı, hatırlatma ve planlama vb. gibi işlemlerin takibini yapmak.",
+        link: "https://drive.google.com/file/d/10wudKLoNPqlIok_CjniL7hzennVgTqSI/view?usp=sharing",
+        type: "İndir",
         img: "/image/app_icon_512x512_bigger.png",
         tags: ["Flutter", "Firebase", "Finance API"]
       },
-      { 
-        title: "Ruhsal Durum Takibi", 
+      {
+        title: "Ruhsal Durum Takibi",
         category: "mobile",
-        desc: "Bu projemde flutter + firebase kullandım. Bu uygulamanın amacı başlıkta belirttiğim gibi insanlara psikolojik destek sağlamak, günlük olarak ruhsal durumunun değişimini görmek vb. şeyler.", 
-        link: "https://drive.google.com/file/d/1A0vFglOjNzFLlFsOzDtoHhd9O-h6gm5C/view?usp=sharing", 
-        type: "İndir", 
+        desc: "Bu projemde flutter + firebase kullandım. Bu uygulamanın amacı başlıkta belirttiğim gibi insanlara psikolojik destek sağlamak, günlük olarak ruhsal durumunun değişimini görmek vb. şeyler.",
+        link: "https://drive.google.com/file/d/1A0vFglOjNzFLlFsOzDtoHhd9O-h6gm5C/view?usp=sharing",
+        type: "İndir",
         img: "/image/app_icon.png",
         tags: ["Flutter", "Firebase"]
       },
-      { 
-        title: "YesilSepet", 
+      {
+        title: "YesilSepet",
         category: "web",
-        desc: "Bu projemde küçük bir e-ticaret sitesinin belli başlı sayfalarıyla küçük bir demosunu yapmayı amaçladım. Projemde session-based authentication (oturum yönetimi) ve MYSQL veri tabanı kullandım. Backend altyapısını node.js + express.js ile geliştirerek, stateful API endpoint'leri tasarladım ayrıca bu api endpointlerini Postman ile test ettim. Proje kullanıcıların; üye olup giriş yapabileceği, ürünleri sepete ekleyebileceği, admin için ürün update işlemlerinin yapılabileceği .vb bir web sitesi.", 
-        link: "https://github.com/asmss/YesilSepet-0", 
-        type: "Github", 
+        desc: "Bu projemde küçük bir e-ticaret sitesinin belli başlı sayfalarıyla küçük bir demosunu yapmayı amaçladım. Projemde session-based authentication (oturum yönetimi) ve MYSQL veri tabanı kullandım. Backend altyapısını node.js + express.js ile geliştirerek, stateful API endpoint'leri tasarladım ayrıca bu api endpointlerini Postman ile test ettim. Proje kullanıcıların; üye olup giriş yapabileceği, ürünleri sepete ekleyebileceği, admin için ürün update işlemlerinin yapılabileceği .vb bir web sitesi.",
+        link: "https://github.com/asmss/YesilSepet-0",
+        type: "Github",
         img: "/image/resimss.png",
         tags: ["Node.js", "Express", "MySQL", "Postman"]
       },
-      { 
-        title: "CV Oluşturucu", 
-        category: "mobile",
-        desc: "Bu proje, React Native (Expo) ile geliştirilen mobil bir arayüz üzerinden alınan kullanıcı verilerini, Node.js & Express.js tabanlı bir backend ile işleyerek PDF CV çıktısı üreten bir sistemdir. Backend tamamen Docker ortamında çalışmakta ve Render üzerinde canlıya alınmıştır.", 
-        link: "https://github.com/asmss/cv_olusturucu-0", 
-        type: "Github", 
-        img: "/image/cv_img.jpg",
-        tags: ["React Native", "Node.js","Express.js", "Docker","Expo","Postman"]
-      },
-      { 
-        title: "KimHaklı", 
+      {
+        title: "KimHaklı",
         category: "web",
-        desc: "Bu projemde küçük ve kullanışlı bir mini anket sitesi yapmayı amaçladım. Projemde session-based authentication (oturum yönetimi)ve veri tabanı olarak firebase firestore kullandım. Backend tarafını da node.js + express.js ile geliştirdim. Postmanla testlerini yapıp render ile deploy ettim. Detaylar için sitemi ziyaret edin.", 
-        link: "https://www.kimhakli.site/", 
-        type: "Site", 
+        desc: "Bu projemde küçük ve kullanışlı bir mini anket sitesi yapmayı amaçladım. Projemde session-based authentication (oturum yönetimi)ve veri tabanı olarak firebase firestore kullandım. Backend tarafını da node.js + express.js ile geliştirdim. Postmanla testlerini yapıp render ile deploy ettim. Detaylar için sitemi ziyaret edin.",
+        link: "https://www.kimhakli.site/",
+        type: "Site",
         img: "/image/kimhakli.png",
-        tags: ["Node.js", "Firebase", "Render","Postman","Html","Css","Ejs templating"]
+        tags: ["Node.js", "Firebase", "Render", "Postman", "Html", "Css", "Ejs templating"]
       },
-      { 
-        title: "Neobez", 
+      {
+        title: "Neobez",
         category: "mobile",
-        desc: "Bu program sayesinde ;programın kendi içindeki real-time mesajlaşma sayfası sayesinde gerçek bir diyetisyenle konuşma fırsatı bulunuyor, hazır yapay zeka API sini entegre ettiğim bir sayfa sayesinde yapay zeka botuyla fikir alışverişi yapılabiliyor ,diyetisyenin kendilerine verebileceği görevleri yapıp ilerleme kontrolü yapılıyor ,yaklaşık 1500 tane yiyecek verisinin olduğu yiyeceklerin kalori,protein vb değerlerinin yazdığı bir sayfa sayesinde araştırma imkanı sunar. Program için flutter frameworkünü ,veritabanı olarak Firebase'in noSQL yapılı Firestore database'ini,auth işlemleri içinde Firebase auth servisini kullandım.", 
-        link: "https://drive.google.com/file/d/1L54k6Qi4Ks2A1MEanOQPNhJWdQyowcQH/view?usp=drive_link", 
-        type: "İndir", 
+        desc: "Bu program sayesinde ;programın kendi içindeki real-time mesajlaşma sayfası sayesinde gerçek bir diyetisyenle konuşma fırsatı bulunuyor, hazır yapay zeka API sini entegre ettiğim bir sayfa sayesinde yapay zeka botuyla fikir alışverişi yapılabiliyor ,diyetisyenin kendilerine verebileceği görevleri yapıp ilerleme kontrolü yapılıyor ,yaklaşık 1500 tane yiyecek verisinin olduğu yiyeceklerin kalori,protein vb değerlerinin yazdığı bir sayfa sayesinde araştırma imkanı sunar. Program için flutter frameworkünü ,veritabanı olarak Firebase'in noSQL yapılı Firestore database'ini,auth işlemleri içinde Firebase auth servisini kullandım.",
+        link: "https://drive.google.com/file/d/1L54k6Qi4Ks2A1MEanOQPNhJWdQyowcQH/view?usp=drive_link",
+        type: "İndir",
         img: "/image/app_png.png",
         tags: ["Flutter", "Firebase", "AI Integration"]
       },
-            { 
-        title: "SnippetKRBLT", 
+      {
+        title: "Device Manager",
         category: "mobile",
-        desc: "Bu uygulamayı geliştirirken, kullanıcıya en iyi mobil deneyimi sunmak için Frontend katmanında React Native ve kolay dağıtım için Expo Go platformunu kullandım. Projenin Backend omurgasını ise yüksek performans ve ölçeklenebilirlik sağlamak amacıyla Node.js ve Express.js oluşturuyor. Tüm kod parçacıkları ve kullanıcı verileri ise güvenilir bir bulut tabanlı çözüm olan MongoDB Atlas üzerinde saklanmaktadır. Ayrıca, uygulamanın ana ayırt edici özelliği olarak, kod parçacıklarını analiz etmek ve yönetimi kolaylaştırmak için LLM (Llama 3) yapay zekasını projemize chatbot olacak şekilde entegre ettim.", 
-        link: "https://github.com/asmss/SnippetKRBLT", 
-        type: "Github", 
-        img: "/image/code-icon-png-0.jpg",
-        tags: ["React Native", "Node.js", "Express.js", "MongoDB Atlas", "Llama 3","Expo"]
-      },
-      { 
-        title: "Device Manager", 
-        category: "mobile",
-        desc: "Flutter ile geliştirilmiş olup yazdığım Android Native (java) kodlarını entegre ettiğim bir mobil uygulamadır. Uygulama; cihazın parlaklık, ses, titreşim ve batarya gibi donanımsal özelliklerini MethodChannel aracılığıyla kontrol eder. Riverpood ile state management sağlanmıştır. Github kodlarına ve uygulama arayüzüne ulaşmak için tıklayın.", 
-        link: "https://github.com/asmss/DeviceManager", 
-        type: "Github", 
+        desc: "Flutter ile geliştirilmiş olup yazdığım Android Native (java) kodlarını entegre ettiğim bir mobil uygulamadır. Uygulama; cihazın parlaklık, ses, titreşim ve batarya gibi donanımsal özelliklerini MethodChannel aracılığıyla kontrol eder. Riverpood ile state management sağlanmıştır. Github kodlarına ve uygulama arayüzüne ulaşmak için tıklayın.",
+        link: "https://github.com/asmss/DeviceManager",
+        type: "Github",
         img: "/image/default-project.png",
-        tags: ["Flutter", "Android Native", "Java", "MethodChannel","Riverpod"]
+        tags: ["Flutter", "Android Native", "Java", "MethodChannel", "Riverpod"]
       }
     ],
     certificatesTitle: "Sertifikalar & Eğitimler",
-viewCertificate: "Sertifikayı Görüntüle",
-certificates: [
-  {
-    title: "Python For Everybody Specialization Program",
-    issuer: "University Of Michigan",
-    date: "2025",
-    img: "/image/michigan.jpeg",
-    link: "https://www.coursera.org/account/accomplishments/specialization/1TUPP0O68EF5"
-  },
-  {
-    title: "Using Python to Access Web Data",
-    issuer: "University Of Michigan",
-    date: "2025",
-    img: "/image/michigan.jpeg",
-    link: "https://www.coursera.org/account/accomplishments/verify/3OCQ5H8LHYBZ"
-  },
-    {
-    title: "Getting Started With Git and Github",
-    issuer: "IBM",
-    date: "2026",
-    img: "/image/ibm_logo.jpeg",
-    link: "https://www.coursera.org/account/accomplishments/verify/ATL4P1O3WQ08"
-  },
+    viewCertificate: "Sertifikayı Görüntüle",
+    certificates: [
       {
-    title: " Bilgisayar dosya güvenliği ve veri kurtarma",
-    issuer: "ODTÜ",
-    date: "2025",
-    img: "/image/orta_dogu_teknik_universitesi_logo.jpeg",
-    link: "https://www.linkedin.com/in/as%C4%B1m-karabulut-6a874b326/details/certifications/"
+        title: "Python For Everybody Specialization Program",
+        issuer: "University Of Michigan",
+        date: "2025",
+        img: "/image/michigan.jpeg",
+        link: "https://www.coursera.org/account/accomplishments/specialization/1TUPP0O68EF5"
+      },
+      {
+        title: "Using Python to Access Web Data",
+        issuer: "University Of Michigan",
+        date: "2025",
+        img: "/image/michigan.jpeg",
+        link: "https://www.coursera.org/account/accomplishments/verify/3OCQ5H8LHYBZ"
+      },
+      {
+        title: "Getting Started With Git and Github",
+        issuer: "IBM",
+        date: "2026",
+        img: "/image/ibm_logo.jpeg",
+        link: "https://www.coursera.org/account/accomplishments/verify/ATL4P1O3WQ08"
+      },
+      {
+        title: " Bilgisayar dosya güvenliği ve veri kurtarma",
+        issuer: "ODTÜ",
+        date: "2025",
+        img: "/image/orta_dogu_teknik_universitesi_logo.jpeg",
+        link: "https://www.linkedin.com/in/as%C4%B1m-karabulut-6a874b326/details/certifications/"
+      },
+    ],
+
   },
-],
-    
-  },
- en: {
+  en: {
     role: "Computer Engineer",
 
     aboutTitle: "About Me",
@@ -163,6 +172,35 @@ certificates: [
     formBtn: "Send",
 
     projects: [
+      {
+        title: "CV Generator",
+        category: "mobile",
+        desc:
+          "This project is a system that generates PDF CV outputs by processing user data collected from a React Native (Expo) mobile interface using a Node.js and Express.js backend. The backend runs entirely in a Docker environment and is deployed on Render.",
+        link: "https://github.com/asmss/cv_olusturucu-0",
+        type: "Github",
+        img: "/image/cv_img.jpg",
+        tags: ["React Native", "Node.js", "Express.js", "Docker", "Expo", "Postman"]
+      },
+      {
+        title: "SnippetKRBLT",
+        category: "mobile",
+        desc:
+          "A mobile-focused version of the SnippetKRBLT project, offering the same AI-powered code snippet management features through a React Native interface.",
+        link: "https://github.com/asmss/SnippetKRBLT",
+        type: "Github",
+        img: "/image/code-icon-png-0.jpg",
+        tags: ["React Native", "Node.js", "Express.js", "MongoDB Atlas", "Llama 3", "Expo"]
+      },
+      {
+        title: "YouTube Video & Music Converter",
+        category: "web",
+        desc: "Developed a robust platform using React and Node.js for converting YouTube videos into high-quality audio and video files format. The system features a background processing architecture powered by BullMQ and Redis for efficient task queuing. It is fully containerized using Docker and utilizes Socket.io to provide users with real-time conversion progress updates.",
+        link: "https://github.com/asmss/videoConventer",
+        type: "View",
+        img: "/image/videoConventer.png",
+        tags: ["React", "Node.js", "Redis", "BullMQ", "Docker", "Socket.io"]
+      },
       {
         title: "Personal Finance Tracking Application",
         category: "mobile",
@@ -194,16 +232,6 @@ certificates: [
         tags: ["Node.js", "Express.js", "MySQL", "Postman"]
       },
       {
-        title: "CV Generator",
-        category: "mobile",
-        desc:
-          "This project is a system that generates PDF CV outputs by processing user data collected from a React Native (Expo) mobile interface using a Node.js and Express.js backend. The backend runs entirely in a Docker environment and is deployed on Render.",
-        link: "https://github.com/asmss/cv_olusturucu-0",
-        type: "Github",
-        img: "/image/cv_img.jpg",
-        tags: ["React Native", "Node.js", "Express.js", "Docker", "Expo", "Postman"]
-      },
-      {
         title: "KimHaklı",
         category: "web",
         desc:
@@ -224,16 +252,6 @@ certificates: [
         tags: ["Flutter", "Firebase", "AI Integration"]
       },
       {
-        title: "SnippetKRBLT",
-        category: "mobile",
-        desc:
-          "A mobile-focused version of the SnippetKRBLT project, offering the same AI-powered code snippet management features through a React Native interface.",
-        link: "https://github.com/asmss/SnippetKRBLT",
-        type: "Github",
-        img: "/image/code-icon-png-0.jpg",
-        tags: ["React Native", "Node.js", "Express.js", "MongoDB Atlas", "Llama 3","Expo"]
-      },
-      {
         title: "Device Manager",
         category: "mobile",
         desc:
@@ -244,38 +262,38 @@ certificates: [
         tags: ["Flutter", "Android Native", "Java", "MethodChannel", "Riverpod"]
       }
     ],
-   certificatesTitle: "Certificates & Training",
-viewCertificate: "View Certificate",
-certificates: [
-  {
-    title: "Python For Everybody Specialization Program",
-    issuer: "University Of Michigan",
-    date: "2025",
-    img: "/image/michigan.jpeg",
-    link: "https://www.coursera.org/account/accomplishments/specialization/1TUPP0O68EF5"
-  },
-  {
-    title: "Using Python to Access Web Data",
-    issuer: "University Of Michigan",
-    date: "2025",
-    img: "/image/michigan.jpeg",
-    link: "https://www.coursera.org/account/accomplishments/verify/3OCQ5H8LHYBZ"
-  },
-    {
-    title: "Getting Started With Git and Github",
-    issuer: "IBM",
-    date: "2026",
-    img: "/image/ibm_logo.jpeg",
-    link: "https://www.coursera.org/account/accomplishments/verify/ATL4P1O3WQ08"
-  },
+    certificatesTitle: "Certificates & Training",
+    viewCertificate: "View Certificate",
+    certificates: [
       {
-    title: " Computer file security and data recovery",
-    issuer: "ODTÜ",
-    date: "2025",
-    img: "/image/orta_dogu_teknik_universitesi_logo.jpeg",
-    link: "https://www.linkedin.com/in/as%C4%B1m-karabulut-6a874b326/details/certifications/"
-  },
-],
-   
+        title: "Python For Everybody Specialization Program",
+        issuer: "University Of Michigan",
+        date: "2025",
+        img: "/image/michigan.jpeg",
+        link: "https://www.coursera.org/account/accomplishments/specialization/1TUPP0O68EF5"
+      },
+      {
+        title: "Using Python to Access Web Data",
+        issuer: "University Of Michigan",
+        date: "2025",
+        img: "/image/michigan.jpeg",
+        link: "https://www.coursera.org/account/accomplishments/verify/3OCQ5H8LHYBZ"
+      },
+      {
+        title: "Getting Started With Git and Github",
+        issuer: "IBM",
+        date: "2026",
+        img: "/image/ibm_logo.jpeg",
+        link: "https://www.coursera.org/account/accomplishments/verify/ATL4P1O3WQ08"
+      },
+      {
+        title: " Computer file security and data recovery",
+        issuer: "ODTÜ",
+        date: "2025",
+        img: "/image/orta_dogu_teknik_universitesi_logo.jpeg",
+        link: "https://www.linkedin.com/in/as%C4%B1m-karabulut-6a874b326/details/certifications/"
+      },
+    ],
+
   }
 };
