@@ -128,7 +128,7 @@ export const translations = {
         link: "https://eticaretsitesidemo.netlify.app/",
         type: "Web Sitesi",
         img: "/image/eticaret.png",
-        tags: ["React", "JavaScript", "Netlify", "E-Commerce UI"]
+        tags: ["React", "JavaScript","LocalStorage", "Netlify", "E-Commerce UI"]
       },
       {
         title: "Mini Katalog Uygulaması",
@@ -311,7 +311,7 @@ export const translations = {
         link: "https://eticaretsitesidemo.netlify.app/",
         type: "Website",
         img: "/image/eticaret.png",
-        tags: ["React", "JavaScript", "Netlify", "E-Commerce UI"]
+        tags: ["React", "JavaScript","LocalStorage", "Netlify", "E-Commerce UI"]
       },
       {
         title: "Mini Catalog App",
