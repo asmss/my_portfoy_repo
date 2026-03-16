@@ -124,7 +124,7 @@ export const translations = {
       }, {
         title: "e-Ticaret Demo",
         category: "web",
-        desc: "React ve JavaScript kullanılarak geliştirilen bu proje, modern bir e-ticaret arayüzünün (v2) demosudur. Proje kapsamında ürün listeleme, dinamik sepet yönetimi ve detaylı ürün sayfaları geliştirilmiştir. TypeScript'in tip güvenliği avantajları kullanılarak temiz ve sürdürülebilir bir mimari oluşturulmuş, Netlify üzerinde canlıya alınmıştır.",
+        desc: "React ve JavaScript mimarisiyle geliştirilen bu e-ticaret demosu, modern web standartlarını ve kullanıcı dostu arayüz yaklaşımlarını içermektedir. Projede veri yönetimi için LocalStorage API entegre edilerek, kullanıcı sepetinin ve tercihlerinin tarayıcı bazlı kalıcılığı sağlanmıştır. Dinamik ürün listeleme, sepet güncellemeleri ve tüm cihazlara uyumlu (responsive) tasarımıyla öne çıkan bu çalışma, Netlify üzerinde canlıya alınmıştır.",
         link: "https://eticaretsitesidemo.netlify.app/",
         type: "Web Sitesi",
         img: "/image/eticaret.png",
@@ -307,7 +307,7 @@ export const translations = {
       {
         title: "e-Commerce Demo",
         category: "web",
-        desc: "Developed using React and JavaScript, this project is a demo of a modern e-commerce interface (v2). It features product listing, dynamic cart management, and detailed product pages. A clean and sustainable architecture was created using TypeScript's type safety advantages, and the project is deployed live on Netlify.",
+        desc: "Developed with React and JavaScript, this e-commerce demo incorporates modern web standards and user-friendly interface approaches. By integrating the LocalStorage API for data management, browser-based persistence of user carts and preferences was achieved. This project, which stands out with its dynamic product listing, cart updates, and responsive design, is deployed live on Netlify.",
         link: "https://eticaretsitesidemo.netlify.app/",
         type: "Website",
         img: "/image/eticaret.png",
@@ -329,7 +329,7 @@ export const translations = {
         link: "https://github.com/asmss/notes_project_0/",
         type: "Github",
         img: "/image/notes.png",
-        tags: ["Flutter", "Flask", "MongoDB Atlas", "Isar DB", "Provider", "Offline-First","render"]
+        tags: ["Flutter", "Flask", "MongoDB Atlas", "Isar DB", "Provider", "Offline-First", "render"]
       },
       {
         title: "Personal Finance Tracking Application",
