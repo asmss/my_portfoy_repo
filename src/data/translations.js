@@ -1,12 +1,69 @@
+import {
+  SiC, SiPython, SiDart, SiJavascript,
+  SiFlutter, SiReact, SiExpo, SiHtml5, SiCss,
+  SiNodedotjs, SiFlask, SiMysql, SiSqlite, SiMongodb,
+  SiFirebase, SiDocker, SiPostman, SiGit, SiGithub,
+  SiSupabase, SiBlender
+} from "react-icons/si";
+import { TbApi } from "react-icons/tb";
+import { FaJava } from "react-icons/fa";
+
 export const skillsData = {
   languages: ["C", "JAVA", "PYTHON", "DART", "JAVASCRIPT"],
   mobile: ["FLUTTER", "REACT NATIVE", "Expo Go", "Expo Router", "Context API"],
   frontend: ["REACT", "HTML5", "CSS3", "EJS TEMPLATING"],
   backend: ["NODE.JS (Express.js)", "Python(flask)", "REST API"],
   database: ["MYSQL", "SQLite", "MongoDB", "FIREBASE (Firestore)"],
-  devops_tools: ["DOCKER", "POSTMAN", "FIREBASE (Auth)", "Git", "Github", "Supabase"]
+  devops_tools: ["DOCKER", "POSTMAN", "FIREBASE (Auth)", "Git", "Github", "Supabase"],
+  design_3DModeling: ["BLENDER"]
 };
 
+export const category_names = {
+  languages: "LANGUAGES",
+  mobile: "MOBİLE",
+  frontend: "FRONTEND",
+  backend: "BACKEND",
+  database: "DATABASE",
+  devops_tools: "DEVOPS & TOOLS",
+  design_3DModeling: "DESİGN & 3D MODELİNG"
+}
+
+export const skillIcons = {
+  "C": <SiC color="#A8B9CC" size={30} />,
+  "JAVA": <FaJava color="#ED8B00" size={30} />,
+  "PYTHON": <SiPython color="#3776AB" size={30} />,
+  "DART": <SiDart color="#0175C2" size={30} />,
+  "JAVASCRIPT": <SiJavascript color="#F7DF1E" size={30} />,
+
+  "FLUTTER": <SiFlutter color="#7a9fbdff" size={30} />,
+  "REACT NATIVE": <SiReact color="#61DAFB" size={30} />,
+  "Expo Go": <SiExpo color="#ffffff" size={30} />,
+  "Expo Router": <SiExpo color="#ffffff" size={30} />,
+  "Context API": <SiReact color="#61DAFB" size={30} />,
+
+  "REACT": <SiReact color="#61DAFB" size={30} />,
+  "HTML5": <SiHtml5 color="#E34F26" size={30} />,
+  "CSS3": <SiCss color="#1572B6" size={30} />,
+  "EJS TEMPLATING": <SiJavascript color="#B4CA65" size={30} />,
+
+  "NODE.JS (Express.js)": <SiNodedotjs color="#339933" size={30} />,
+  "Python(flask)": <SiFlask color="#ffffff" size={30} />,
+  "REST API": <TbApi color="#009688" size={30} />,
+
+  "MYSQL": <SiMysql color="#4479A1" size={30} />,
+  "SQLite": <SiSqlite color="#003B57" size={30} />,
+  "MongoDB": <SiMongodb color="#47A248" size={30} />,
+  "FIREBASE (Firestore)": <SiFirebase color="#FFCA28" size={30} />,
+
+  "DOCKER": <SiDocker color="#2496ED" size={30} />,
+  "POSTMAN": <SiPostman color="#FF6C37" size={30} />,
+  "FIREBASE (Auth)": <SiFirebase color="#FFA611" size={30} />,
+  "Git": <SiGit color="#F05032" size={30} />,
+  "Github": <SiGithub color="#ffffff" size={30} />,
+  "Supabase": <SiSupabase color="#3ECF8E" size={30} />,
+
+  "BLENDER": <SiBlender color="#F5792A" size={30} />
+};
 export const translations = {
   tr: {
     role: "Bilgisayar Mühendisi",
@@ -23,6 +80,7 @@ export const translations = {
     filterMobile: "Mobil",
     filterWeb: "Web",
     filterAi: "Yapay Zeka",
+    filterDesign: "Tasarım",
     formName: "Adınız",
     formEmail: "E-posta Adresiniz",
     formMsg: "Mesajınız",
@@ -54,6 +112,41 @@ export const translations = {
         type: "Github",
         img: "/image/videoConventer.png",
         tags: ["React", "Node.js", "Redis", "BullMQ", "Docker", "Socket.io"]
+      },
+      {
+        title: "3D İzometrik Oda Tasarımı",
+        category: "design",
+        desc: "Blender kullanarak tasarladığım bu projede, modern ve minimal bir oturma odası konseptini izometrik bakış açısıyla modelledim. Proje kapsamında mesh modelleme, kumaş simülasyonu (yastıklar için pofuduk yapı), gelişmiş ışıklandırma (Area & Sun Light) ve malzeme (shading/node) tekniklerini uyguladım. Özellikle 3D dünyasındaki derinlik ve ışık-gölge dengesi üzerine odaklandığım bir çalışma oldu.",
+        link: "https://github.com/asmss/tnc_blender_project",
+        type: "Github",
+        img: "/image/AsımKarabulut.png",
+        tags: ["Blender", "3D Modeling", "Isometric Design", "Shading", "Cloth Simulation"]
+      }, {
+        title: "e-Ticaret Demo",
+        category: "web",
+        desc: "React ve JavaScript kullanılarak geliştirilen bu proje, modern bir e-ticaret arayüzünün (v2) demosudur. Proje kapsamında ürün listeleme, dinamik sepet yönetimi ve detaylı ürün sayfaları geliştirilmiştir. TypeScript'in tip güvenliği avantajları kullanılarak temiz ve sürdürülebilir bir mimari oluşturulmuş, Netlify üzerinde canlıya alınmıştır.",
+        link: "https://eticaretsitesidemo.netlify.app/",
+        type: "Web Sitesi",
+        img: "/image/eticaret.png",
+        tags: ["React", "JavaScript", "Netlify", "E-Commerce UI"]
+      },
+      {
+        title: "Mini Katalog Uygulaması",
+        category: "mobile",
+        desc: "Flutter ve Dart kullanılarak geliştirilen bu katalog uygulamasında, ürün listeleme ve kategori yönetimi üzerine odaklanılmıştır. Projede verilerin uygulama kapansa dahi korunabilmesi için Shared Preferences entegrasyonu yapılmıştır. Bu sayede yerel veri depolama (local storage) ve kalıcı kullanıcı tercihleri yönetimi konularında pratik bir çözüm sunulmuştur.",
+        link: "https://github.com/asmss/mini_catalog_app",
+        type: "Github",
+        img: "/image/katalog.png",
+        tags: ["Flutter", "Dart", "Shared Preferences", "Local Storage", "UI Design"]
+      },
+      {
+        title: "Vintage Note",
+        category: "mobile",
+        desc: "Flutter ile geliştirilen, Offline-First mimarisine sahip gelişmiş bir not alma uygulamasıdır. Yerel veri yönetimi için yüksek performanslı Isar NoSQL veritabanı, bulut senkronizasyonu için ise MongoDB Atlas ve Flask (Python) tabanlı bir backend altyapısı kullanılmıştır(render ile yayına alınmıştır). Awesome Notifications ile hatırlatıcı sistemleri, Provider ile state yönetimi ve http.Client ile modüler API entegrasyonu sağlanmıştır. Veri tutarlılığı için local-to-cloud senkronizasyon algoritmaları ve Render uyanma süreleri için optimize edilmiş timeout mekanizmaları içermektedir.",
+        link: "https://github.com/asmss/notes_project_0/",
+        type: "Github",
+        img: "/image/notes.png",
+        tags: ["Flutter", "Flask", "MongoDB Atlas", "Isar DB", "Provider", "Offline-First", "render"]
       },
       {
         title: "Kişisel finans takip uygulaması",
@@ -165,6 +258,7 @@ export const translations = {
     filterMobile: "Mobile",
     filterWeb: "Web",
     filterAi: "Artificial Intelligence",
+    filterDesign: "Design",
 
     formName: "Your Name",
     formEmail: "Your Email",
@@ -202,6 +296,42 @@ export const translations = {
         tags: ["React", "Node.js", "Redis", "BullMQ", "Docker", "Socket.io"]
       },
       {
+        title: "3D Isometric Room Design",
+        category: "design",
+        desc: "In this project designed with Blender, I modeled a modern and minimal living room concept from an isometric perspective. I applied techniques such as mesh modeling, cloth simulation (for the fluffy pillows), advanced lighting (Area & Sun Light), and material (shading/node) systems. This work specifically focuses on depth, light-shadow balance, and composition in the 3D environment.",
+        link: "https://github.com/asmss/tnc_blender_project",
+        type: "Github",
+        img: "/image/AsımKarabulut.png",
+        tags: ["Blender", "3D Modeling", "Isometric Design", "Shading", "Cloth Simulation"]
+      },
+      {
+        title: "e-Commerce Demo",
+        category: "web",
+        desc: "Developed using React and JavaScript, this project is a demo of a modern e-commerce interface (v2). It features product listing, dynamic cart management, and detailed product pages. A clean and sustainable architecture was created using TypeScript's type safety advantages, and the project is deployed live on Netlify.",
+        link: "https://eticaretsitesidemo.netlify.app/",
+        type: "Website",
+        img: "/image/eticaret.png",
+        tags: ["React", "JavaScript", "Netlify", "E-Commerce UI"]
+      },
+      {
+        title: "Mini Catalog App",
+        category: "mobile",
+        desc: "This catalog application, developed with Flutter and Dart, focuses on product listing and category management. Shared Preferences integration was implemented to ensure data persistence even when the app is closed. This provides a practical solution for local storage management and persistent user preferences.",
+        link: "https://github.com/asmss/mini_catalog_app",
+        type: "Github",
+        img: "/image/katalog.png",
+        tags: ["Flutter", "Dart", "Shared Preferences", "Local Storage", "UI Design"]
+      },
+      {
+        title: "Vintage Note",
+        category: "mobile",
+        desc: "An advanced note-taking application with an Offline-First architecture, built with Flutter. It utilizes high-performance Isar NoSQL for local storage and MongoDB Atlas with a Flask (Python) backend for cloud synchronization (It has been published with a render.). The app features reminder systems via Awesome Notifications, state management with Provider, and modular API integration using http.Client. It includes robust local-to-cloud sync algorithms for data persistence and optimized timeout mechanisms to handle cold starts on Render hosting.",
+        link: "https://github.com/asmss/notes_project_0/",
+        type: "Github",
+        img: "/image/notes.png",
+        tags: ["Flutter", "Flask", "MongoDB Atlas", "Isar DB", "Provider", "Offline-First","render"]
+      },
+      {
         title: "Personal Finance Tracking Application",
         category: "mobile",
         desc:
@@ -211,6 +341,7 @@ export const translations = {
         img: "/image/app_icon_512x512_bigger.png",
         tags: ["Flutter", "Firebase", "Finance API"]
       },
+
       {
         title: "Mental Health Tracker",
         category: "mobile",

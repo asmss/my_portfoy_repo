@@ -1,27 +1,27 @@
-import React, { useState, useEffect, useRef } from 'react'; 
+import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
 import { translations, skillsData } from './data/translations';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { 
-  faSun, faMoon, faLanguage, 
-  faExternalLinkAlt, faUser, faBriefcase, faPaperPlane, faBars, faTimes, faTools 
+import {
+  faSun, faMoon, faLanguage,
+  faExternalLinkAlt, faUser, faBriefcase, faPaperPlane, faBars, faTimes, faTools
 } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import emailjs from '@emailjs/browser'; 
+import emailjs from '@emailjs/browser';
 import { faCertificate } from '@fortawesome/free-solid-svg-icons';
-
+import { category_names, skillIcons } from './data/translations';
 function App() {
   const [lang, setLang] = useState('tr');
   const [theme, setTheme] = useState('dark');
   const [filter, setFilter] = useState('all');
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
-  
-  const formRef = useRef(); 
+
+  const formRef = useRef();
 
   const t = translations[lang];
-useEffect(() => {
-  document.title = lang === 'tr' ? 'Asım Karabulut | Portfolyo' : 'Asim Karabulut | Portfolio';
-}, [lang]);
+  useEffect(() => {
+    document.title = lang === 'tr' ? 'Asım Karabulut | Portfolyo' : 'Asim Karabulut | Portfolio';
+  }, [lang]);
   useEffect(() => {
     document.body.className = theme === 'dark' ? 'dark-mode' : 'light-mode';
   }, [theme]);
@@ -29,27 +29,27 @@ useEffect(() => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
-  const TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
-  const PUBLIC_KEY = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+    const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+    const TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+    const PUBLIC_KEY = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, PUBLIC_KEY)
       .then((result) => {
-          alert(lang === 'tr' ? "Mesajınız başarıyla gönderildi! ✅" : "Message sent successfully! ✅");
-          formRef.current.reset(); 
+        alert(lang === 'tr' ? "Mesajınız başarıyla gönderildi! ✅" : "Message sent successfully! ✅");
+        formRef.current.reset();
       }, (error) => {
-          alert(lang === 'tr' ? "Bir hata oluştu, lütfen tekrar deneyin. ❌" : "An error occurred, please try again. ❌");
-          console.log(error.text);
+        alert(lang === 'tr' ? "Bir hata oluştu, lütfen tekrar deneyin. ❌" : "An error occurred, please try again. ❌");
+        console.log(error.text);
       });
   };
 
   const closeSidebarIfOpen = () => {
-  if (isSidebarOpen && window.innerWidth < 900) {
-    setIsSidebarOpen(false);
-  }
-};
-  const filteredProjects = filter === 'all' 
-    ? t.projects 
+    if (isSidebarOpen && window.innerWidth < 900) {
+      setIsSidebarOpen(false);
+    }
+  };
+  const filteredProjects = filter === 'all'
+    ? t.projects
     : t.projects.filter(p => p.category === filter);
 
   const handleNavLinkClick = () => {
@@ -58,7 +58,7 @@ const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
 
   return (
     <div className={`app-layout ${!isSidebarOpen ? 'sidebar-closed' : ''}`}>
-      
+
       <button className="sidebar-toggle-btn" onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
         <FontAwesomeIcon icon={isSidebarOpen ? faTimes : faBars} />
       </button>
@@ -78,8 +78,8 @@ const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
             <FontAwesomeIcon icon={faTools} /> {t.skillsTitle}
           </a>
           <a href="#certificates" className="side-nav-link" onClick={handleNavLinkClick}>
-          <FontAwesomeIcon icon={faCertificate} /> {t.certificatesTitle || "Sertifikalar"}
-          </a>            
+            <FontAwesomeIcon icon={faCertificate} /> {t.certificatesTitle || "Sertifikalar"}
+          </a>
           <a href="#projects" className="side-nav-link" onClick={handleNavLinkClick}>
             <FontAwesomeIcon icon={faBriefcase} /> {t.navProjects}
           </a>
@@ -104,10 +104,10 @@ const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
         </div>
       </aside>
 
-      <main className="main-content"onClick={closeSidebarIfOpen}>
+      <main className="main-content" onClick={closeSidebarIfOpen}>
         <section id="about" className="content-card">
           <h1>Asım Karabulut</h1>
-          <p className="job-title" style={{color: 'var(--accent)', fontWeight: 'bold'}}>{t.role}</p>
+          <p className="job-title" style={{ color: 'var(--accent)', fontWeight: 'bold' }}>{t.role}</p>
           <div className="divider"></div>
           <h3>{t.aboutTitle}</h3>
           <p className="about-p">{t.aboutText}</p>
@@ -115,22 +115,25 @@ const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
 
         <section id="skills" className="content-card">
           <h3>{t.skillsTitle}</h3>
-          
+
           {Object.entries(skillsData).map(([category, items]) => (
-            <div key={category} className="skill-category-wrapper" style={{marginBottom: '20px'}}>
+            <div key={category} className="skill-category-wrapper" style={{ marginBottom: '20px' }}>
               <h4 style={{
-                color: 'var(--accent)', 
-                fontSize: '0.9rem', 
-                textTransform: 'uppercase', 
+                color: 'var(--accent)',
+                fontSize: '0.9rem',
+                textTransform: 'uppercase',
                 marginBottom: '10px',
                 borderBottom: '1px solid var(--border)',
                 display: 'inline-block'
               }}>
-                {category.replace('_', ' & ')}
+                {category_names[category]}
               </h4>
               <div className="skills-grid">
                 {items.map((skill, index) => (
-                  <div key={index} className="skill-item">
+                  <div key={index} className="skill-item" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <span className="skill-icon" style={{ fontSize: '1.2rem', display: 'flex' }}>
+                      {skillIcons[skill] || null}
+                    </span>
                     {skill}
                   </div>
                 ))}
@@ -139,45 +142,45 @@ const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
           ))}
         </section>
 
-<section id="certificates" className="content-card">
-  <h3>{t.certificatesTitle}</h3>
-  <div className="divider"></div>
-  <div className="certificates-grid">
-    {t.certificates.map((cert, index) => (
-      <div key={index} className="cert-card">
-        <div className="cert-img-container">
-          <img src={cert.img || "/image/default-cert.png"} alt={cert.title} />
-        </div>
+        <section id="certificates" className="content-card">
+          <h3>{t.certificatesTitle}</h3>
+          <div className="divider"></div>
+          <div className="certificates-grid">
+            {t.certificates.map((cert, index) => (
+              <div key={index} className="cert-card">
+                <div className="cert-img-container">
+                  <img src={cert.img || "/image/default-cert.png"} alt={cert.title} />
+                </div>
 
-        <div className="cert-content">
-          <div className="cert-info">
-            <h4>{cert.title}</h4>
-            <div className="cert-issuer">
-              <FontAwesomeIcon icon={faCertificate} className="cert-mini-icon" /> 
-              {cert.issuer}
-            </div>
-            <div className="cert-date">{cert.date}</div>
+                <div className="cert-content">
+                  <div className="cert-info">
+                    <h4>{cert.title}</h4>
+                    <div className="cert-issuer">
+                      <FontAwesomeIcon icon={faCertificate} className="cert-mini-icon" />
+                      {cert.issuer}
+                    </div>
+                    <div className="cert-date">{cert.date}</div>
+                  </div>
+
+                  {cert.link && (
+                    <a href={cert.link} target="_blank" rel="noreferrer" className="cert-link">
+                      {t.viewCertificate} <FontAwesomeIcon icon={faExternalLinkAlt} size="sm" />
+                    </a>
+                  )}
+                </div>
+              </div>
+            ))}
           </div>
-          
-          {cert.link && (
-            <a href={cert.link} target="_blank" rel="noreferrer" className="cert-link">
-              {t.viewCertificate} <FontAwesomeIcon icon={faExternalLinkAlt} size="sm" />
-            </a>
-          )}
-        </div>
-      </div>
-    ))}
-  </div>
-</section>            
-            
+        </section>
+
 
         <section id="projects">
           <div className="section-header">
             <h2>{t.projectsTitle}</h2>
             <div className="filter-bar">
-              {['all', 'mobile', 'web', 'ai'].map(cat => (
-                <button 
-                  key={cat} 
+              {['all', 'mobile', 'web', 'ai',"design"].map(cat => (
+                <button
+                  key={cat}
                   className={`filter-btn ${filter === cat ? 'active' : ''}`}
                   onClick={() => setFilter(cat)}
                 >
@@ -201,7 +204,7 @@ const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
                     ))}
                   </div>
                   <p>{p.desc}</p>
-                  
+
                   <a href={p.link} target="_blank" rel="noreferrer" className="p-link-btn">
                     <FontAwesomeIcon icon={p.link.includes('github') ? faGithub : faExternalLinkAlt} /> {p.type || "View"}
                   </a>
@@ -216,25 +219,25 @@ const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
           <div className="divider"></div>
           <form className="contact-form" ref={formRef} onSubmit={sendEmail}>
             <div className="form-group">
-              <input 
-                type="text" 
-                name="name" 
-                placeholder={t.formName} 
-                required 
+              <input
+                type="text"
+                name="name"
+                placeholder={t.formName}
+                required
               />
-              <input 
-                type="email" 
-                name="email" 
-                placeholder={t.formEmail} 
-                required 
+              <input
+                type="email"
+                name="email"
+                placeholder={t.formEmail}
+                required
               />
             </div>
-            <textarea 
-              name="message" 
-              placeholder={t.formMsg} 
+            <textarea
+              name="message"
+              placeholder={t.formMsg}
               required
             ></textarea>
-            
+
             <button type="submit" className="form-submit-btn">
               <span>{t.formBtn}</span>
               <FontAwesomeIcon icon={faPaperPlane} />
